@@ -1,3 +1,7 @@
 main.exe
 .idea/
 *.exe
+*.ppj
+*.ppx
+*.tag
+output/
