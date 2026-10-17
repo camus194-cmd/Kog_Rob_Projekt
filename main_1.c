@@ -36,6 +36,42 @@ int main() {
         fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
     }
 
+    Robot_phi = 3.14 ; // radianes
+    for (int k = 0; k < 4; k++) {
+        Drive(5.0f, 5.0f, 15.0f); //para que es time ?
+        fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
+    }
+
+    Robot_phi = 4.7 ; // radianes
+    for (int k = 0; k < 5; k++) {
+        Drive(5.0f, 5.0f, 15.0f); //para que es time ?
+        fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
+    }
+
+    Robot_phi = 0 ; // radianes
+    for (int k = 0; k < 10; k++) {
+        Drive(5.0f, 5.0f, 15.0f); //para que es time ?
+        fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
+    }
+
+    Robot_phi = 1.57 ; // radianes
+    for (int k = 0; k < 6.8; k++) {
+        Drive(5.0f, 5.0f, 15.0f); //para que es time ?
+        fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
+    }
+
+    Robot_phi = 0 ; // radianes
+    for (int k = 0; k < 7.6; k++) {
+        Drive(5.0f, 5.0f, 15.0f); //para que es time ?
+        fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
+    }
+
+    Robot_phi = 1.57 ; // radianes
+    for (int k = 0; k < 11; k++) {
+        Drive(5.0f, 5.0f, 15.0f); //para que es time ?
+        fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
+    }
+
     fclose(f);
     return 0;
 };

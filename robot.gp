@@ -59,7 +59,7 @@ py(u,v) = ry + u*sin(ph) + v*cos(ph)
 #    "size ratio -1" hace que 1 mm en x mida lo mismo que en y,
 #    para que el laberinto no se deforme.
 # ============================================================
-set title "Kognitive Robotik V3 - Labyrinth und Roboter"
+set title "Kognitive Robotik - Labyrinth und Roboter"
 set xlabel "X-Position (mm)"
 set ylabel "Y-Position (mm)"
 set size ratio -1
@@ -94,6 +94,6 @@ set arrow 4 from px(-C,C),py(-C,C)   to px(C,-C),py(C,-C) nohead lc rgb 'black' 
 # ============================================================
 plot 'Labyrinth.txt' using ($1*M):($2*M):(($3-$1)*M):(($4-$2)*M) \
         with vectors nohead lw 3 lc rgb '#b39ddb' title 'Waende', \
-     'rob.txt' using ($1*R+X0):($2*R+Y0) with lines lw 3 lc rgb '#76e04a' title 'Fahrspur', \
-     1/0 with lines lw 3 lc rgb 'blue' title 'Roboter', \
-     1/0 with lines lw 3 lc rgb 'red'  title 'Raeder'
+             'rob.txt' using ($1*R+X0):($2*R+Y0) with lines lw 3 lc rgb '#76e04a' title 'Fahrspur', \
+             1/0 with lines lw 3 lc rgb 'blue' title 'Roboter', \
+             1/0 with lines lw 3 lc rgb 'red'  title 'Raeder'
