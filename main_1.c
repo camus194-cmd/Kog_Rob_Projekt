@@ -19,12 +19,12 @@ int main() {
     FILE *f = fopen("Rob_Spur.txt", "w");
     fprintf(f, "%6.1f, %6.1f , %6.1f\n", Robot_x, Robot_y, Robot_phi);
 
-    for (int k = 0; k < 18.0f; k++) {
+    for (int k = 0; k < 15.0f; k++) {
         Drive(5.0f, 5.0f, 15.0f); //para que es time ?
         fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
     }
 
-    Robot_phi = 0;
+    /*Robot_phi = 0;
     for (int k = 0; k < 11.0f; k++) {
         Drive(5.0f, 5.0f, 15.0f); //para que es time ?
         fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
@@ -66,11 +66,11 @@ int main() {
         fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
     }
 
-    Robot_phi = 1.57 ; // radianes
+    Robot_phi = 1.57 ;
     for (int k = 0; k < 11.0f; k++) {
         Drive(5.0f, 5.0f, 15.0f); //para que es time ?
         fprintf(f, "%6.1f, %6.1f, %6.1f\n", Robot_x, Robot_y, Robot_phi);
-    }
+    }*/
 
     fclose(f);
     return 0;
