@@ -70,7 +70,7 @@ set arrow 4 from px(-C,C),py(-C,C)     to px(C,-C),py(C,-C)   nohead lc rgb 'bla
 
 # 1. Leemos primero Rob_Spur.txt (con comas) y lo guardamos
 set datafile separator comma
-plot 'Rob_Spur.txt' using ($1*R+X0):($2*R+Y0) with lines lw 3 lc rgb '#76e04a' title 'Fahrspur', \
+plot 'Sensor.txt' using ($1*R+X0):($2*R+Y0) with lines lw 3 lc rgb '#76e04a' title 'Fahrspur', \
      1/0 with lines lw 3 lc rgb 'blue' title 'Roboter', \
      1/0 with lines lw 3 lc rgb 'red'  title 'Raeder'
 
