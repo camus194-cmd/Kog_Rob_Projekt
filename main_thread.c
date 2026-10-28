@@ -114,7 +114,7 @@ static int guardar_barrido(const char *nombre_fichero)
         return -1;
     }
 
-    for (int grados = 0; grados < 90; grados++) {
+    for (int grados = 0; grados < 360; grados++) {
         const float phi = (float)grados * PI / 180.0f;
         const float d   = percepcion(robot_x, robot_y, phi);
 
